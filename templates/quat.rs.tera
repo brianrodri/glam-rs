@@ -640,7 +640,7 @@ impl {{ self_t }} {
     /// `[x, y, z, w]`
     #[inline]
     #[must_use]
-    pub fn to_array(self) -> [{{ scalar_t }}; 4] {
+    pub const fn to_array(self) -> [{{ scalar_t }}; 4] {
         [self.x, self.y, self.z, self.w]
     }
 
